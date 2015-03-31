@@ -1,11 +1,12 @@
 {
   "name": "common-css",
   "version": "0.0.1",
-  "description": "A starter project for AngularJS",
   "homepage": "https://github.com/angvishvish/common-css",
   "repository": "https://github.com/angvishvish/common-css",
-  "authors": [
-    "angvishvish <angvish@promobitech.com>"
-  ],
-  "license": "MIT"
+  "authors": "angvishvish <angvish@promobitech.com>",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.6.1",
+    "bower": "^1.3.1"
+  }
 }
