@@ -1,0 +1,11 @@
+{
+  "name": "common-css",
+  "version": "0.0.1",
+  "description": "A starter project for AngularJS",
+  "homepage": "https://github.com/angvishvish/common-css",
+  "repository": "https://github.com/angvishvish/common-css",
+  "authors": [
+    "angvishvish <angvish@promobitech.com>"
+  ],
+  "license": "MIT"
+}
