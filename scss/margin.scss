@@ -1,0 +1,31 @@
+.remove-margin {
+  margin: 0;
+}
+
+.remove-margin-lr {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.remove-margin-tb {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin add-margin-lr ($grid-gutter) {
+  margin-left: $grid-gutter;
+  margin-right: $grid-gutter;
+}
+
+@mixin add-margin-tb ($grid-gutter) {
+  margin-top: $grid-gutter;
+  margin-bottom: $grid-gutter;
+}
+
+@mixin add-margin-bottom ($grid-gutter) {
+  margin-bottom: $grid-gutter;
+}
+
+@mixin add-margin-top ($grid-gutter) {
+  margin-bottom: $grid-gutter;
+}
