@@ -12,20 +12,18 @@
   margin-bottom: 0;
 }
 
-@mixin add-margin-lr ($grid-gutter) {
-  margin-left: $grid-gutter;
-  margin-right: $grid-gutter;
+.add-margin-lr {
+  @include add-margin-lr($grid-gutter);
 }
 
-@mixin add-margin-tb ($grid-gutter) {
-  margin-top: $grid-gutter;
-  margin-bottom: $grid-gutter;
+.add-margin-tb {
+  @include add-margin-tb($grid-gutter);
 }
 
-@mixin add-margin-bottom ($grid-gutter) {
-  margin-bottom: $grid-gutter;
+.add-margin-bottom {
+  @include add-margin-top($grid-gutter);
 }
 
-@mixin add-margin-top ($grid-gutter) {
-  margin-bottom: $grid-gutter;
+.add-margin-top {
+  @include add-margin-bottom($grid-gutter);
 }
