@@ -1,3 +1,5 @@
+
+// remove margin
 .remove-margin {
   margin: 0;
 }
@@ -12,9 +14,9 @@
   margin-bottom: 0;
 }
 
+// add margins
 .add-margin-lr {
-  margin-left: @grid-gutter-width / 2;
-  margin-right: @grid-gutter-width / 2;
+  .add-margin-lr (@grid-gutter);
 }
 
 .add-margin-tb {
