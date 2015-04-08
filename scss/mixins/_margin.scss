@@ -1,3 +1,5 @@
+// variables
+$grid-gutter:          30px !default;
 
 @mixin add-margin-lr ($grid-gutter) {
   margin-left: $grid-gutter;
@@ -13,6 +15,6 @@
   margin-top: $grid-gutter;
 }
 
-@mixin add-margin-top ($grid-gutter) {
+@mixin add-margin-bottom ($grid-gutter) {
   margin-bottom: $grid-gutter;
 }
