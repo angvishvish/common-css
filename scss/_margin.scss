@@ -1,5 +1,5 @@
 // variables
-$grid-gutter:          30px !default;
+$grid-gutter:          15px !default;
 
 .remove-margin {
   margin: 0;
@@ -23,10 +23,10 @@ $grid-gutter:          30px !default;
   @include add-margin-tb($grid-gutter);
 }
 
-.add-margin-bottom {
+.add-margin-top {
   @include add-margin-top($grid-gutter);
 }
 
-.add-margin-top {
+.add-margin-bottom {
   @include add-margin-bottom($grid-gutter);
 }
