@@ -19,11 +19,6 @@ $grid-gutter:          30px !default;
 
 // add padding
 .add-padding-lr {
-  padding-left: $grid-gutter-width / 2;
-  padding-right: $grid-gutter-width / 2;
-}
-
-.add-padding-lr {
   @include add-padding-lr ($grid-gutter);
 }
 
