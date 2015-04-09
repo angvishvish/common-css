@@ -15,6 +15,22 @@ $grid-gutter:          15px !default;
   margin-bottom: 0;
 }
 
+.remove-margin-left {
+  margin-left: 0;
+}
+
+.remove-margin-right {
+  margin-right: 0;
+}
+
+.remove-margin-top {
+  margin-top: 0;
+}
+
+.remove-margin-bottom {
+  margin-bottom: 0;
+}
+
 .add-margin-lr {
   @include add-margin-lr($grid-gutter);
 }
