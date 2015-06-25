@@ -28,3 +28,6 @@ node_modules
 
 # remove bower components
 bower_components
+
+# sass cache
+.sass-cache

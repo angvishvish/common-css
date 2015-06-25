@@ -23,8 +23,15 @@ module.exports = function(grunt) {
     sass: {
       debug: {
         src: [
-          'bower_components/bootstrap-sass/assets/stylesheets/bootstrap/bootstrap.scss',
           'common-scss.scss'
+        ],
+        dest: 'styles.css'
+      }
+    },
+    less: {
+      debug: {
+        src: [
+          'common-less.less'
         ],
         dest: 'styles.css'
       }
