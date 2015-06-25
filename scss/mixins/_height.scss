@@ -1,0 +1,9 @@
+@mixin height-calc($height) {
+  height: 100%;
+  height: -webkit-calc(100% - #{$height});
+     height: -moz-calc(100% - #{$height});
+       height: -o-calc(100% - #{$height});
+  height: calc(100% - #{$height});
+  overflow: auto;
+  overflow-x: hidden;
+}
