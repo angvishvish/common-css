@@ -1,0 +1,20 @@
+@mixin arrow-box ($my-msg-color: black, $border-width: 5px) {
+  position: relative;
+  border-left: $border-width solid $my-msg-color;
+  &:after {
+    border-color: rgba( $my-msg-color, 0 );
+    border-right-color: $my-msg-color !important;
+  }
+  &:after {
+    right: 100%;
+    top: 20px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-width: 10px;
+    margin-top: -18px;
+  }
+}
