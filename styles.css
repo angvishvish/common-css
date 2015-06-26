@@ -5640,6 +5640,28 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+p {
+  height: 100px;
+  width: 100px;
+  margin-left: 100px;
+  position: relative;
+  border-right: 3px dashed red;
+  border-left: 3px dashed red; }
+  p:after {
+    border-right-color: red !important;
+    border-left-color: red !important; }
+  p:after {
+    right: 100%;
+    top: 20px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-width: 10px;
+    margin-top: -18px; }
+
 .remove-margin {
   margin: 0; }
 
