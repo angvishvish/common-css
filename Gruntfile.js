@@ -41,6 +41,12 @@ module.exports = function(grunt) {
         'styles.css'
       ]
     },
+    watch: {
+      scripts: {
+        files: 'scss/**/**.scss',
+        tasks: ['sass'] 
+      },
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -50,7 +56,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.registerTask('css', ['less', 'cssmin']);
+  grunt.registerTask('css', ['sass', 'cssmin']);
   //grunt.registerTask('js', ['concat', 'uglify']);
 
 };

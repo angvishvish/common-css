@@ -1,0 +1,47 @@
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes $animation-name {
+    @content;
+  }
+  @-moz-keyframes $animation-name {
+    @content;
+  }  
+  @-ms-keyframes $animation-name {
+    @content;
+  }
+  @-o-keyframes $animation-name {
+    @content;
+  }  
+  @keyframes $animation-name {
+    @content;
+  }
+}
+
+@mixin animation($str, $duration, $iteration-count, $alternate, $ease-out, $forwards, $delay) {
+  animation-name:             #{$str};
+  animation-duration:         #{$duration};
+  animation-iteration-count:  #{$iteration-count};
+  animation-direction:        #{$alternate};
+  animation-timing-function:  #{$ease-out};
+  animation-fill-mode:        #{forwards};
+  animation-delay:            #{$delay};
+}
+
+// @include keyframes(slide-down) {
+//   0% {
+//     margin-left: 0;
+//     background: black;
+//     color: white;
+//   }
+//   100% {
+//     margin-left: 100%;
+//     background: black;
+//     color: white;
+//   }
+// }
+
+// p {
+//   width: 100px;
+//   font-size: 10px;
+//   background: black;
+//   @include animation(slide-down, 2s, infinite, alternate, 1, forwards, 1s );
+// }
